@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon Premier Formulaire</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+<h1>Votre Avis Nous Intéresse</h1>
+<form>
+	<table>
+		<tr>
+			<td>
+	<fieldset>
+		
+		<legend>Informations Personnelles</legend>
+		<ol>
+			<li>Nom <input type="text" name="" required=""> </li>
+			<li>Date de naissance <input type="Date" name="" required="">  </li>
+			<li>Site <input required pattern="(http|https)://" type="url" id="url" name="" placeholder="http://monsite.com" required="">
+			</li>
+			
+			<li>
+				<label for="Emploi" required=""> Emploi </label>
+				<select>
+					<option>Etudiant</option>
+					<option>Administrareur Réseau</option>
+					<option>Développeur Web</option>
+					<option>Web designer</option>
+					<option>DevOps</option>
+				</select>			
+			</li>			
+			<li>Approx. Salaire annuel <br><input type="number" name="" placeholder="$" step="1000" required=""></li>
+		</ol>
+	</fieldset>
+			</td>		
+			<td>
+	<fieldset>
+		<legend>Informations de Contact</legend>
+		<ol>
+			<li>Adresse ligne 1 <br><input type="Adresse" name="" required=""></li>
+			<li>Adresse ligne 2 <br><input type="Adresse" name="" ></li>
+			<li>
+				<label for="Pays" required=""> Pays </label>
+				<select>
+					<option>Algérie</option>
+					<option>Tunisie</option>
+					<option>Maroc</option>
+				</select>			
+			</li>
+			<li>Tél <input type="tel" name="" placeholder="eg: +213 67..." required=""></li>
+			<li>Courriel <input type="email" name="" required=""></li>
+		</ol>
+	</fieldset>
+			</td>
+	</tr>
+</table>
+</form>
+<h1>Préférences</h1>
+<div>
+Choisir une couleur <input type="color" name="" value="black" required=""><br>
+</div>
+<div>
+Sur une échelle de 1 à 10 quel est votre degré d'enthousiasme pour HTML5 ? <input type="range" name="" required=""><br>
+</div>
+<div>
+<input type="submit" name="Envoyer">
+</div>
+</body>
+</html>
